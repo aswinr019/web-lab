@@ -1,0 +1,72 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    
+}
+#nav{
+   padding:20px 500px;
+}
+#nav a{
+    padding-left: 20px;
+    color: #000000;
+    font-size: 20px;
+    text-decoration: none;
+}
+#header{
+    display: flex;
+}
+
+#header h2{
+    padding: 10px 60px;
+    font-size: 40px;
+}
+#header img{
+    width: 100px;
+    padding: 10px 200px;
+    padding-right: 50px;
+}
+
+#body img{
+    width:1400px;
+    padding: 10px 20px;
+    
+}
+#body h2{
+    text-align: center;
+}
+
+#body p{
+    text-align: justify;
+    padding: 10px 200px;
+    
+}
+
+#body ul{
+    text-align: justify;
+    padding: 10px 230px;
+    
+}
+
+#contact-title{
+    padding: 5px 100px;
+}
+
+form{
+    padding: 20px 100px;
+}
+
+form input,textarea{
+    margin-bottom: 20px;
+}
+
+form input button{
+    padding: 20px 50px;
+}
+
+table{
+
+    margin: 10px 100px;
+
+    margin-bottom: 200px;
+}

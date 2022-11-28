@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+
+}
+nav{
+    display: inline;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 100px;
+    left: 50%;
+
+}
+
+nav li {
+    list-style: none;
+    color: #000000;
+    float: left;
+    padding-right: 30px;
+    margin-top: 50px;
+}
+nav li:nth-child(1){
+    margin-left: 200px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+nav li a:hover {
+
+    color:#00b4d8;
+}
+
+#content{
+    padding: 200px;
+
+}
