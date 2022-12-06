@@ -14,7 +14,7 @@ const months = [
   "May",
   "June",
   "July",
-  "Auguest",
+  "August",
   "September",
   "October",
   "November",

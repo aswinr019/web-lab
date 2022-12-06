@@ -3,7 +3,7 @@ const bg = document.getElementById("bg");
 const text = document.getElementById("text");
 
 
-colors = [
+let colors = [
 
     '#ffbe0b',
     '#fb5607',
@@ -23,8 +23,8 @@ colors = [
 btn.addEventListener("click",() => {
 
     let random =  Math.floor(Math.random() * 13)  ;
-    bg.style.background = colors[  random   ];
-    text.textContent = colors[ random ] ;
-    // btn.style.background = colors[    Math.floor(Math.random() * 12)  ];
+    // bg.style.background = colors[  random   ];
+    // text.textContent = colors[ random ] ;
+     bg.style.background = colors[    Math.floor(Math.random() * 12)  ];
     
 });
