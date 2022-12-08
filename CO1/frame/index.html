@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>Frames</title>
-   <link rel="stylesheet" href="./styles.css">
 </head>
-<frameset rows="20%,60%,10%">
-    <frame  src="first.html">
-    <frame  src="second.html">
-    <frame  src="third.html">
+<frameset rows="20%,60%,30%">
 
-        <noframes>
-            <body>
-                <h2>Frames not supported</h2>
-            </body>
-        </noframes>
-        
+    <frame src="./header.html">
+       <frameset cols="30%,70%">
+        <frame src="./left.html">
+            <frame src="./right.html">
+       </frameset>
+            <frame src="./footer.html">
 </frameset>
+<noframes>
 
+    <body>
+        <h3>Frames not supported</h3>
+    </body>
+</noframes>
 
 </html>

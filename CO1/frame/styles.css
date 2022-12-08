@@ -1,46 +1,31 @@
-
-
-#one{
-    background-color: #94d2bd;
-    font-family: 'Poppins', sans-serif;
-    margin: 50px 50px;
-    padding: 0;
-    text-align: center;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+h1{
+  padding: 30px;
+  text-align: center;
+}
+h2{
+  padding-top: 50px;
+  text-align: center;
 }
 
-#two{
-    background-color: #e9d8a6;
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+#header {
+  background-color: #a2d2ff;
 }
 
-#three{
-    background-color: #ee9b00;
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+#footer {
+  background-color: #ffb703;
 }
 
-#four{
-    background-color: #f5cac3;
-    font-family: 'Poppins', sans-serif;
-    margin: 100px 100px;
-    padding: 0;
-    text-align: center;
+#left {
+  font-size: 24px;
+  margin: 50px;
+  background-color: #ffc8dd;
 }
 
-#five{
-    
-    background-color: #f8edeb;
-    font-family: 'Poppins', sans-serif;
-    margin: 50px 100px;
-    padding: 0;
-    text-align: center;
-    text-align: justify;
-}
-iframe{
-    height: 200px;
+#content{
+  margin: 40px;
 }
