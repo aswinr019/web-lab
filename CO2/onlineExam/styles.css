@@ -10,9 +10,11 @@ h1 {
 }
 
 #content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   border: 1px solid #000000;
   font-size: 22px;
-  padding: 70px 410px;
+  padding: 70px 100px;
 }
 
 #question {
@@ -24,7 +26,7 @@ h1 {
 }
 
 #nxtBtn {
-  margin-left: 290px;
+
   margin-top: 20px;
   padding: 15px 40px;
   background-color: aqua;
@@ -36,7 +38,7 @@ h1 {
 
 #nxtBtnDanger{
 
-  margin-left: 290px;
+
   margin-top: 20px;
   padding: 15px 40px;
   background-color: red;
@@ -52,7 +54,7 @@ h1 {
 }
 
 #guidelines{
-  padding: 10px 50px;
+  padding: 10px 0px;
   text-align: justify;
 }
 
@@ -62,6 +64,6 @@ li{
 }
 
 #result{
-  padding-left: 200px;
+  padding-left: 80px;
   padding-bottom: 50px;
 }
