@@ -88,7 +88,7 @@ btn.addEventListener("click", (e) => {
     count++;
   }
 
-  if (!email.value.match(/[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]+/gi)) {
+  if (!email.value.match(/[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]+/g)) {
     emailErr.textContent =
       "Email should be a comination of letters numbers @ and .";
     count++;

@@ -1,22 +1,30 @@
-body{
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-img{
-    width: 400px;
-    height: 400px;
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 19px;
+  font-family: "Sono", sans-serif;
 }
 
-h2{
-    text-align: center;
-    font-size: 35px;
-    margin-bottom: 50px;
+h1 {
+  text-align: center;
+  padding-top: 50px;
 }
 
-#content{
-    
-    margin: 100px 400px;
-    text-align: justify;
+#content {
+  margin: 50px 200px;
+  text-align: justify;
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+
+#img {
+  height: 400px;
+  width: 400px;
+
+  padding: 30px;
+}
+
+#para {
+  padding: 30px;
 }

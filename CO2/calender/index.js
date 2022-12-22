@@ -40,22 +40,27 @@ const renderCalender = () => {
 
     let lastDayOfMonth =new Date(year.value, month.value, 0).getDate(), // get last day of current month
     firstDayOfMonth = new Date(year.value,month.value-1,1).getDay(), // get first day of current month
-    lastDayOfPrevMonth = new Date(year.value,month.value-1,0).getDate(); // get last day of last month
-    
-    console.log(firstDayOfMonth,lastDayOfMonth,lastDayOfPrevMonth);
+    lastDayOfPrevMonth = new Date(year.value,month.value-1,0).getDate(), // get last day of last month
+    firstDayOfNxtMonth = new Date(year.value,month.value+1,1).getDay();
+
+
+    // console.log(lastDayOfNxtMonth);
+     console.log(firstDayOfMonth,lastDayOfMonth,lastDayOfPrevMonth,firstDayOfNxtMonth);
 
     currentDateLabel.textContent = `${months[month.value - 1]} , ${year.value}`;
 
     for(let i = firstDayOfMonth; i > 0 ; i--){
     
         li += `<li class="last-month">${lastDayOfPrevMonth -i + 1}</li>`;
-        console.log(i);
+       
     }
 
     for( let i = 1 ; i <= lastDayOfMonth; i++){
         li += `<li>${i}</li>`;
-        console.log(i);
+        // console.log(i);
     }
+
+
 
     calenderData.innerHTML += weaks+li;
   }
