@@ -10,8 +10,16 @@ h1 {
 }
 
 #content {
+<<<<<<< HEAD
   font-size: 22px;
   padding: 70px 410px;
+=======
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: 1px solid #000000;
+  font-size: 22px;
+  padding: 70px 100px;
+>>>>>>> 14cf813968d45fec103d62a137158bd780e4c480
 }
 
 #question {
@@ -23,7 +31,11 @@ h1 {
 }
 
 #nxtBtn {
+<<<<<<< HEAD
   margin-left: 290px;
+=======
+
+>>>>>>> 14cf813968d45fec103d62a137158bd780e4c480
   margin-top: 20px;
   padding: 15px 40px;
   background-color: aqua;
@@ -33,17 +45,43 @@ h1 {
   border-radius: 5px;
 }
 
+<<<<<<< HEAD
+=======
+#nxtBtnDanger{
+  margin-top: 20px;
+  padding: 15px 40px;
+  background-color: red;
+  border: 2px solid #000000;
+  font-family: 'Sono', sans-serif;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+>>>>>>> 14cf813968d45fec103d62a137158bd780e4c480
 #nxtBtn:hover{
     background-color: aquamarine;
 
 }
 
 #guidelines{
+<<<<<<< HEAD
   padding: 10px 50px;
+=======
+  padding: 10px 0px;
+>>>>>>> 14cf813968d45fec103d62a137158bd780e4c480
   text-align: justify;
 }
 
 li{
   list-style: none;
   padding-bottom:10px ;
+<<<<<<< HEAD
 }
+=======
+}
+
+#result{
+  padding-left: 80px;
+  padding-bottom: 50px;
+}
+>>>>>>> 14cf813968d45fec103d62a137158bd780e4c480
