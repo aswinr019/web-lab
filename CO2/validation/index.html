@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Registration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <div>
+      <h1>Student Registration</h1>
+      <form action="">
+        <div id="content">
+          <div>
+            <label for="fname">First Name:</label><br />
+            <input type="text" class="input" id="fname" name="fname" /> <br />
+            <span class="error" id="fnameErr"></span> <br />
+            <label for="lname">Last Name:</label><br />
+            <input type="text" class="input" id="lname" name="lname" /> <br />
+            <span class="error" id="lnameErr"></span> <br />
+
+            <label for="dob">DOB:</label>
+            <input type="date" name="dob" id="dob"><br />
+            <span class="error" id="dobErr"></span> <br />
+            <label for="mobile">Mobile No:</label><br>
+            <input type="text" name="mobile" class="input" id="mobile"><br />
+            <span class="error" id="mobileErr"></span> <br />
+            <label for="email">Email Id:</label> <br />
+            <input type="email" class="input" id="email" name="email" /> <br />
+            <span class="error" id="emailErr"></span> <br />
+            <label for="gender">Gender:</label> <br />
+            Male
+            <input type="radio" name="gender" id="genderMale" />
+            Female
+            <input type="radio" name="gender" id="genderFemale" />
+            Other
+            <input type="radio" name="gender" id="genderOther" /> <br />
+            <span class="error" id="genderErr"></span> <br />
+            <label for="address">Address:</label> <br />
+            <textarea
+              name="address"
+              class="input"
+              id="address"
+              cols="22"
+              rows="5"
+            ></textarea>
+            <br />
+            <span class="error" id="addressErr"></span> <br />
+          </div>
+          <div>
+            <label for="pincode">Pincode:</label><br />
+            <input type="text" class="input" id="pincode" name="pincode" />
+            <br />
+            <span class="error" id="pincodeErr"></span> <br />
+            <label for="city">City:</label><br />
+            <input type="text" class="input" id="city" name="city" /> <br />
+            <span class="error" id="cityErr"></span> <br />
+            <label for="country">State:</label><br />
+            <input type="text" class="input" id="state" name="state" /> <br />
+            <span class="error" id="stateErr"></span> <br />
+            <label for="country">Country:</label><br />
+            <input type="text" class="input" id="country" name="country" />
+            <br />
+            <span class="error" id="countryErr"></span> <br />
+
+            <label for="hobbies">Hobbies</label> <br />
+            Reading
+            <input type="checkbox" name="hobbies" id="reading" /> &nbsp;&nbsp;
+            Listening to music
+            <input type="checkbox" name="hobbies" id="music" />&nbsp;&nbsp;
+            Writing
+            <input
+              type="checkbox"
+              name="hobbies"
+              id="writing"
+            />&nbsp;&nbsp;<br />
+            <span class="error" id="hobbiesErr"></span> <br />
+            <label for="profile">Profile Picture</label><br />
+            <input type="file" name="profile" id="file" /> <br>
+            <span class="error" id="fileErr"></span> <br />
+            <br />
+            <label for="password">Password:</label><br />
+            <input type="text" class="input" id="password" name="password" /> <br />
+            <span class="error" id="passwordErr"></span> <br />
+            <label for="passwordConfirm">Confirm Password:</label><br />
+            <input type="text" class="input" id="passwordConfirm" name="passwordConfirm" /> <br />
+            <span class="error" id="passwordConfirmErr"></span> <br />
+          </div>
+        </div>
+        <div id="table">
+                    <button id="btn">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
