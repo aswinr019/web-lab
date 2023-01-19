@@ -1,0 +1,43 @@
+body{
+ padding: 50px 50px;
+}
+
+#content{
+
+    text-align: center;
+}
+
+div{
+
+    
+    margin-left: 500px;
+}
+h5{
+    text-align: justify;
+}
+
+.btn{
+    border-radius:10px;
+    padding:15px 10px;
+}
+
+a{
+    text-decoration: none;
+    padding:15px 10px;
+    border: 0.5px solid black;
+    border-radius:10px;
+
+}
+
+input{
+    padding: 10px 10px;
+    border-radius: 10px;
+    border:0.4px solid black;
+}
+
+#clear{
+    background-color: #ee5252;
+}
+form{
+    margin-left: 500px;
+}
