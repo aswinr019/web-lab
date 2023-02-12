@@ -1,19 +1,20 @@
 <html>
-
 <head>
-<title>Test Project</title>
+<title>Database Connection</title>
+<link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+	<h2>Database Connection</h2>
 <form method="POST">
-Email<br>
+<label for="email">Email</label> <br>
 <input type="text" name="email" id="email"><br>
 <span id="emailErr" ></span>
 <br>
-Password<br>
+<label for="password">Password</label> <br>
 <input type="password" name="password" id="password" > <br>
 <span id="passwordErr"></span> <br>
-<input type="submit" value="Click me" id="btn" name="submit">
-<a href="show.php">Show</a>
+<input type="submit" value="add records" id="btn" name="submit">
+<input type="submit" value="show records" id="btn" name="show">
 </form>
 <script>
 
@@ -46,33 +47,51 @@ Password<br>
 </script>
 </body>
 <?php 
-	$conn = mysqli_connect("localhost","root","","testdb");
-
-	if(!$conn){
-
-		echo "Connection failed!";
+	
+	$server = "localhost";
+	$user = "root";
+	$password = "";
+	$database = "testdb";
+	
+	$connection = mysqli_connect($server,$user,$password,$database);
+	
+	if(!$connection){
+		echo "<p>Connection failed!</p><br>";
 	}
 	else {
-		echo "Connection was successful<br>";
+		echo "<p>Connection was successful</p><br>";
 
-		if($_SERVER['REQUEST_METHOD'] == "POST" ){
+		if(isset($_POST['submit'])){
 			$email = $_POST['email'];
 			$password = $_POST['password'];
 			
-			echo $email;	
-			echo $password;	
-
 			$sql = "INSERT INTO tbl VALUES('$email','$password')";
 
-			$result = mysqli_query($conn,$sql);
+			$result = mysqli_query($connection,$sql);
 
 			if($result){
-				echo "Succesfull";
+				echo "<p>Records added successfully</p><br>";
 			}
 			else {
-				echo "Failed!";
+				echo "<p>Failed to add records!</p><br>";
 			}
 		
+		}
+
+
+		if(isset($_POST['show'])){
+	
+		
+			$sql = "SELECT * FROM tbl";
+			$result = mysqli_query($connection,$sql);
+			
+			echo "<br><br><br>";
+			echo "<table border='1'>";
+			echo "<tr><th>Email</th><th>Password</th></tr>";
+			foreach($result as $row){
+				echo "<tr><td>".$row['email']."</td><td>".$row['password']."</td></tr>";
+			}
+			echo "</table>";
 		}
 	}
 
