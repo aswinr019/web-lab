@@ -55,7 +55,7 @@ btn.addEventListener("click", (e) => {
   pswrdErr.textContent = "";
   confrmPswrdErr.textContent = "";
 
-  if (!fname.value.match(/[a-zA-Z]/gi)) {
+  if (!fname.value.match(/[a-zA-Z]/g)) {
     fnameErr.textContent = "First name should only contain letters!";
     isError = true;
   }
@@ -74,7 +74,7 @@ btn.addEventListener("click", (e) => {
     isError = true;
   }
 
-  if (!lname.value.match(/[a-zA-Z]/gi)) {
+  if (!lname.value.match(/[a-zA-Z]/g)) {
     lnameErr.textContent = "Last name should only contain letters!";
     isError = true;
   }
