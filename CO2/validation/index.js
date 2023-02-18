@@ -184,9 +184,9 @@ btn.addEventListener("click", (e) => {
     isError = true;
   }
 
-  if (!pswrd.value.match(/[a-zA-Z0-9]*[a-zA-Z0-9]*[a-zA-Z0-9]/gi)) {
+  if (!pswrd.value.match(/[a-zA-Z0-9]*[a-zA-Z0-9]*[a-zA-Z0-9]/g)) {
     pswrdErr.textContent =
-      "Password should be a comination of letters numbers and special characters";
+      "Password should be a combination of letters numbers and special characters";
     isError = true;
   }
 
