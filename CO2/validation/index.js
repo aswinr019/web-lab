@@ -99,7 +99,7 @@ btn.addEventListener("click", (e) => {
     isError = true;
   }
 
-  if (mobile.value.length < 10 && mobile.value.length < 11) {
+  if (mobile.value.length != 10 ) {
     mobileErr.textContent = "Mobile number should contain 10 digits!";
     isError = true;
   }
