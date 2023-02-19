@@ -35,20 +35,20 @@ if($connection){
     <form  method="POST">
         Name <br>
         <input type="text" name="name" id="name"> <br>
-        <span id="nameErr"></span> <br>
+        <span id="nameErr" class="error"></span> <br>
         Email <br>
         <input type="text" name="email" id="email"><br>
-        <span id="emailErr"></span> <br>
+        <span id="emailErr" class="error"></span> <br>
         Password <br>
         <input type="password" name="password" id="password"> <br>
-        <span id="passwordErr"></span> <br>
+        <span id="passwordErr" class="error"></span> <br>
         Department <br>
         <select name="department" id="department">
             <option value="1">CS</option>
             <option value="2">Mech</option>
             <option value="3">EC</option>
         </select><br>
-        <span id="departmentErr"></span> <br>
+        <span id="departmentErr" class="error"></span> <br>
 
 
         <input type="submit" value="Register" name="submit" id="btn">

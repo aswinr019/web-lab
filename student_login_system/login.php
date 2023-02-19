@@ -42,10 +42,10 @@ include('header.php');
 <form  method="POST">
         Email <br>
         <input type="text" name="email" id="email"><br>
-        <span id="emailErr"></span> <br>
+        <span id="emailErr" class="error"></span> <br>
         Password <br>
         <input type="password" name="password" id="password"> <br>
-        <span id="passwordErr"></span> <br>
+        <span id="passwordErr" class="error"></span> <br>
         <input type="submit" value="Login" name="submit" id="btn">
 </div>
 <script>

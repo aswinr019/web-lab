@@ -4,7 +4,7 @@
     $userid = $_SESSION['userid'];
 
     if($connection){
-	$query = "SELECT * FROM student";
+	$query = "SELECT * FROM student WHERE id='$userid'";
 
     	$result = mysqli_query($connection,$query);
 
