@@ -153,6 +153,7 @@ const stringLength = () => {
   });
 };
 
+
 const squareRoot = () => {
   content.innerHTML = "";
 
